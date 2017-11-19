@@ -62,29 +62,55 @@ namespace ArraysWork
 
             //FIZZBUZZ
 
-            Console.WriteLine("If you enter a number for me, I'll fizzbuzz through to it!");
-            Console.WriteLine("\nThis wil be the most fun if you choose a number higher than 15.");
-            int endNum = int.Parse(Console.ReadLine());
+            //Console.WriteLine("If you enter a number for me, I'll fizzbuzz through to it!");
+            //Console.WriteLine("\nThis wil be the most fun if you choose a number higher than 15.");
+            //int endNum = int.Parse(Console.ReadLine());
 
-            for (int i=1; i<= endNum; i++)
+            //for (int i=1; i<= endNum; i++)
+            //{
+            //    if (i % 3 == 0 && i % 5 == 0)
+            //    {
+            //        Console.WriteLine("Fizzbuzz");
+            //    }
+            //    else if (i % 3 == 0)
+            //    {
+            //        Console.WriteLine("Fizz");
+            //    }
+            //    else if (i % 5 == 0)
+            //    {
+            //        Console.WriteLine("Buzz");
+            //    }
+            //    else
+            //    { Console.WriteLine(i); }
+            //}
+
+            //FIBONACCI
+
+            //function f(n) = f(n-1) + f(n-2)
+            //12 = 0 + 1 + 1+ 2 +3 +5 + 8+13
+
+            Console.WriteLine("Give me a number and I'll fibonacci it up for you!");
+            int numberFib = int.Parse(Console.ReadLine());
+
+            for (int i=0; i<=numberFib; i++)
+                if (i>=0)
+                {
+                    Console.WriteLine(0 + (i-1) +(i-1));
+                }
+
+
+
+
+        }
+
+        public static int Fibonacci(int num)
+        {
+            if (num == 0)
+                return 0;
+            else
             {
-                if (i % 3 == 0 && i % 5 == 0)
-                {
-                    Console.WriteLine("Fizzbuzz");
-                }
-                else if (i % 3 == 0)
-                {
-                    Console.WriteLine("Fizz");
-                }
-                else if (i % 5 == 0)
-                {
-                    Console.WriteLine("Buzz");
-                }
-                else
-                { Console.WriteLine(i); }
+
             }
-
-
         }
     }
 }
